@@ -40,3 +40,9 @@ def find_best_step(inp, direction=1, init_val=None):
 
 
 print(find_best_step(inp))
+
+
+inp = np.array(json.load(open("input", "r")))
+val = round(np.mean(inp))
+print(int(sum(abs(inp - val))))
+
